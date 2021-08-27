@@ -29,5 +29,5 @@
 * Export data as csv for MATLAB analysis. Make sure that you have the following headers:  Raw.Average, Raw.STD & ExtCal.StandardConcentration
 * Write any incident in the ICP book.
 
-*Ángel Rodés, 2020*
+*Ángel Rodés, 2020*\
 [**angelrodes.com**](https://angelrodes.wordpress.com/)
