@@ -30,3 +30,8 @@ You can export other data too. They will be ignored.
 3. Run ```ICPOESdatared_v2_4.m``` in MATLAB/Octave and select your file. A lot of graphical output will appear, and a text file (```.txt```) containing a few tables will be created (concentrations, calibrations, LOD/LOQ; by analyte, by element, etc.).
 
 ![Graphical output](https://user-images.githubusercontent.com/53089531/124753740-45a09a00-df21-11eb-9fcc-508e1f4e7713.jpg)
+
+## Cangelog
+
+v2.4 (2021.09.08)\
+If `Raw.STD` is not included, `Raw.RSD` is used instead (`Raw.STD=Raw.Average*Raw.RSD/100`)
