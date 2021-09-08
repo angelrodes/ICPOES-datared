@@ -2,7 +2,8 @@
 
 ICPOES data reduction from Qtegra raw data.
 
-*Ángel Rodés*, SUERC (2021)
+*Ángel Rodés*, SUERC (2021)\
+[angelrodes.com](https://angelrodes.wordpress.com/)
 
 ## Requirements
 
