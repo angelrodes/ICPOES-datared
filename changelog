@@ -1,0 +1,2 @@
+v2.4
+If `Raw.STD` is not included, `Raw.RSD` is used instead (Raw.Average*Raw.RSD/100)
