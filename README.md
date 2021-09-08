@@ -6,7 +6,7 @@ ICPOES data reduction from Qtegra raw data.
 
 ## Requirements
 
-these files must be in the same folder:
+These files must be in the same folder:
 
 * ICP data in ```.csv```
 * ```ICPOESdatared_v2_4.m```
@@ -14,7 +14,7 @@ these files must be in the same folder:
 
 ## How to make it work with Qtegra
 
-1. Export data including ```Raw.Average```, ```Raw.STD``` and ```ExtCal.StandardConcentration``` in a ```.csv``` file with semicolon (```;```) as separator:
+1. After running the [Thermo ICP-OES](https://github.com/angelrodes/ICPOES-datared/blob/main/ICPOES_checklist.md), export data including ```Raw.Average```, ```Raw.STD``` and ```ExtCal.StandardConcentration``` in a ```.csv``` file with semicolon (```;```) as separator:
 
 ``` csv
 Raw.Average;(...);Raw.STD;(...);ExtCal.StandardConcentration
