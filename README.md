@@ -31,7 +31,7 @@ You can export other data too. They will be ignored.
 
 ![Graphical output](https://user-images.githubusercontent.com/53089531/124753740-45a09a00-df21-11eb-9fcc-508e1f4e7713.jpg)
 
-## Cangelog
+## Changelog
 
 v2.4 (2021.09.08)\
 If `Raw.STD` is not included, `Raw.RSD` is used instead (`Raw.STD=Raw.Average*Raw.RSD/100`)
