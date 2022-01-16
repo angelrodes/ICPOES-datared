@@ -1,6 +1,6 @@
-# MATLAB: ICPOES datared
+# ICPOES datared
 
-ICPOES data reduction from Qtegra raw data.
+MATLAB scripts for ICPOES data reduction from Qtegra raw data.
 
 *Ángel Rodés*, SUERC (2021)\
 [angelrodes.com](https://angelrodes.wordpress.com/)
