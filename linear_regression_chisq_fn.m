@@ -7,13 +7,14 @@ function [ out ] = linear_regression_chisq_fn(x,dx,y,dy)
 %   chisq: array of chi-squared values corresponding to the slopes and itercepts values
 %   redchisq: reduced chi-squared value of the best fit = minimum chisq value / degrees of freedom
 %   R2: R2 of the best fit
+%   sloping: 1 if slope is not 0 within the one-sigma range
 % Angel Rodes, 2019
 
 %% select number of models
 testpointstotal=1e6;
 testpoints=round(testpointstotal.^0.5);
 
-%% doplot=1 if you want to see plots
+%% doplot=1 if you want to see plots (for testing purposes)
 doplot=0;
 
 %% All inputs to single rows
@@ -51,8 +52,8 @@ dx=dxtemp;
 st=zeros(1,testpoints);
 yit=zeros(1,testpoints);
 for n=1:testpoints
-    xtemp=normrnd(x,dx);
-    ytemp=normrnd(y,dy);
+    xtemp=normrnd_BoxMuller(x,dx);
+    ytemp=normrnd_BoxMuller(y,dy);
     slopetemp=(ytemp-mean(ytemp))/(xtemp-mean(xtemp));
     intercepttemp=mean(ytemp-slopetemp*xtemp);
     st(n)=slopetemp;
@@ -93,7 +94,8 @@ while convergence<1
     %% calculate one sigma limits limits and goodness of fit
     minchi=min(CHISQ(:));
     dof=length(x)-2;
-    maxchi=chi2inv(0.6827+chi2cdf(minchi,dof)*(1-0.6827),dof);
+%     maxchi=chi2inv(0.6827+chi2cdf(minchi,dof)*(1-0.6827),dof);
+    maxchi=minchi+max(1,dof); % simplified to avoid using the statistic package in octave
     if isinf(maxchi)
         maxchi=minchi+dof;
     end
