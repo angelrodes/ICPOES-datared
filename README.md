@@ -26,7 +26,7 @@ See example file: ```AR20200205Aliquots.csv```
 
 You can export other data too. They will be ignored.
 
-2. Modify data in ```ExtCal.StandardConcentration``` columns if needed. E.g. if you want to use some standrd data not stated in Qtegra.
+2. Modify data in ```ExtCal.StandardConcentration``` columns if needed. E.g. if you want to use some standard data not stated in Qtegra.
 
 3. Run ```ICPOESdatared_vX.m``` in MATLAB/Octave and select your file. A lot of graphical output will appear, and a text file (```.txt```) containing a few tables will be created (concentrations, calibrations, LOD/LOQ; by analyte, by element, etc.).
 
